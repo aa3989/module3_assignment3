@@ -1,0 +1,22 @@
+# Settings for collecting coverage data.
+[run]
+
+# Measure decision branches as well as executed lines.
+# For example, test division results that are whole numbers
+# and division results that keep a fractional part.
+branch = True
+
+# Settings for reporting coverage.
+[report]
+
+# Require 100% total measured coverage.
+fail_under = 100
+
+# Show uncovered locations in the terminal coverage report.
+show_missing = True
+
+# Some settings are also explicit in pytest.ini.
+# They do not cause coverage to run twice.
+
+# Do not exclude main.py: its startup behavior is tested
+# in tests/test_main.py and included in application coverage.
